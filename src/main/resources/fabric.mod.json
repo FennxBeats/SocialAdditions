@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "socialadditions",
+	"version": "${version}",
+	"name": "Social Additions",
+	"description": "Adds things for you to have more fun in a multiplayer world and just mess around with your friends. Keeps things balanced and does not add overpowered items.",
+	"authors": [
+		"Fennx1000"
+	],
+	"contact": {
+
+	},
+	"license": "MIT",
+	"icon": "assets/socialadditions/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.fennx1000.socialadditions.SocialAdditions"
+		],
+		"fabric-datagen": [
+			"net.fennx1000.socialadditions.SocialAdditionsDataGenerator"
+		],
+        "client": [
+             "net.fennx1000.socialadditions.SocialAdditionsClient"
+        ]
+	},
+	"mixins": [
+		"socialadditions.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.1",
+		"minecraft": "~1.21.10",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
