@@ -1,14 +1,14 @@
 {
-	"required": true,
-	"package": "net.fennx1000.socialadditions.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
-	}
+  "required": true,
+  "minVersion": "0.8",
+  "package": "net.fennx1000.socialadditions.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "socialadditions-refmap.json",
+  "mixins": [
+    "LivingEntityMixin"
+  ],
+  "client": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }

@@ -19,17 +19,12 @@ public class ModItems {
         return Registry.register(Registries.ITEM, key, new Item(settings));
     }
 
-    public static final Item RANDOM_POTION = registerItem(
-            "random_potion",
-            new Item.Settings().maxCount(1)
-    );
-
 
     public static void registerModItems() {
         SocialAdditions.LOGGER.info("Registering Mod Items for " + SocialAdditions.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(entries -> {
-            entries.add(RANDOM_POTION);
+
         });
     }
 }
