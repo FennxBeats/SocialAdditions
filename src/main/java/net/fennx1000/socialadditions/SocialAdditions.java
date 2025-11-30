@@ -2,6 +2,7 @@ package net.fennx1000.socialadditions;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.fennx1000.socialadditions.item.ModItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -12,6 +13,6 @@ public class SocialAdditions implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+        ModItems.registerModItems();
 	}
 }
